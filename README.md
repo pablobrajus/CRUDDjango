@@ -24,6 +24,6 @@ python manage.py runserver y listo!
 
 
 
-Modelo:
+## Modelo:
 
 ![Imagen2](https://github.com/pablobrajus/imagenes/blob/main/modelos.png?raw=true)
