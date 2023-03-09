@@ -1,0 +1,32 @@
+{% extends "AppCrud/base.html" %}
+
+{% block content %}
+
+<main role="main" class="col-md-9 col-lg-10 offset-md-3 offset-lg-2 px-4" style="margin-top: 50px;">
+    <h1>Creacion de Productos</h1>
+    <p>Crea un producto nuevo</p>
+     
+
+
+    
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            {% if messages %}
+            <div class="alert alert-success" role="alert">
+                <ul class="messages">
+                    {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </form>   
+</main>
+
+
+
+  
+
+{% endblock %}

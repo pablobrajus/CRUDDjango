@@ -1,0 +1,40 @@
+{% extends "AppCrud/base.html" %}
+
+{% block content %}
+<main role="main" class="col-md-9 col-lg-10 offset-md-3 offset-lg-2 px-4" style="margin-top: 50px;">
+    <h1>CRUD DE PRODUCTOS</h1>
+    <p>Filtrar Productos</p>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="query" class="form-control" placeholder="Ingrese el nombre del producto">
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+    {% if productos %}
+        <div class="table-responsive">
+            <table class="table">
+                <thead style="background-color: grey">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for producto in productos %}
+                    <tr>
+                        <td>{{ producto.nombre }}</td>
+                        <td>{{ producto.descripcion }}</td>
+                        <td>{{ producto.precio }}</td>
+                        <td>{{ producto.stock }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% endif %}
+</main>
+{% endblock %}

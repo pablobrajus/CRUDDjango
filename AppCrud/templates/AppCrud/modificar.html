@@ -1,0 +1,33 @@
+{% extends "AppCrud/base.html" %}
+
+{% block content %}
+<main role="main" class="col-md-9 col-lg-10 offset-md-3 offset-lg-2 px-4" style="margin-top: 50px;">
+    <h1>CRUD DE PRODUCTOS</h1>
+    <p>Modificar Producto</p>
+    <div class="table-responsive">
+        <table class="table" >
+          <thead style="background-color:grey">
+            <tr>
+              <th>Producto</th>
+              <th>Descripción</th>
+              <th>Precio</th>
+              <th>Cantidad</th> 
+              <th>Accion</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for producto in productos %}
+            <tr>
+              <td>{{ producto.nombre }}</td>
+              <td>{{ producto.descripcion }}</td>
+              <td>{{ producto.precio }}</td>
+              <td>{{ producto.stock }}</td>
+              <td><a href="{% url 'modificar_producto' producto.id %}">Modificar</a></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+</main>
+{% endblock %}
