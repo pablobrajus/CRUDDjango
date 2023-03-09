@@ -8,6 +8,10 @@ Python 3.10
 
 Django 4.1.5
 
+Podes verlo en funcionamiento en:
+
+https://pablobrajus.pythonanywhere.com/AppCrud/
+
 Instalacion:
 
 Clona el repositorio 
