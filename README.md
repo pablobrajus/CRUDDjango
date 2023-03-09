@@ -15,8 +15,9 @@ Django 4.1.5
 ## Instalacion:
 
 Clona el repositorio 
-En tu ventana de comandos ejecuta:
-python manage.py runserver y listo!
+
+En tu ventana de comandos ejecuta: *python manage.py runserver* y listo!
+
 
 ## Capturas:
 
