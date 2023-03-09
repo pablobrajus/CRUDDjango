@@ -5,6 +5,7 @@ Pequeño Proyecto CRUD utilizando DJango y Bootstrap
 Requisitos: 
 
 Python 3.10
+
 Django 4.1.5
 
 Instalacion:
