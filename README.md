@@ -1,24 +1,24 @@
 ### CRUDDjango
 
-Pequeño Proyecto CRUD utilizando DJango y Bootstrap
+##Pequeño Proyecto CRUD utilizando DJango y Bootstrap
 
-Requisitos: 
+#Requisitos: 
 
 Python 3.10
 
 Django 4.1.5
 
-Podes verlo en funcionamiento en:
+#*Podes verlo en funcionamiento en:*
 
-https://pablobrajus.pythonanywhere.com/AppCrud/
+###https://pablobrajus.pythonanywhere.com/AppCrud/
 
-Instalacion:
+##Instalacion:
 
 Clona el repositorio 
 En tu ventana de comandos ejecuta:
 python manage.py runserver y listo!
 
-Capturas:
+##Capturas:
 
 ![Imagen1](https://github.com/pablobrajus/imagenes/blob/main/Captura1.PNG?raw=true)
 
